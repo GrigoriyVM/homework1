@@ -1,0 +1,31 @@
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+backup_*.tar.gz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup directory
+backup/

@@ -30,3 +30,7 @@ fi
 cd "$BACKUP_DIR"
 ls -t backup_*.tar.gz 2>/dev/null | tail -n +6 | xargs -r rm
 echo "Cleaned old backups, kept last 5"
+
+# Add compression level option
+COMPRESSION_LEVEL=${3:-6}
+echo "Using compression level: $COMPRESSION_LEVEL"

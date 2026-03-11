@@ -30,3 +30,8 @@ fi
 cd "$BACKUP_DIR"
 ls -t backup_*.tar.gz 2>/dev/null | tail -n +6 | xargs -r rm
 echo "Cleaned old backups, kept last 5"
+
+# This line contains a syntax error
+if [ -z "$1" ]  # Missing 'then'
+    echo "No source directory specified, using current directory"
+fi

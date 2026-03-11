@@ -34,3 +34,8 @@ echo "Cleaned old backups, kept last 5"
 # Add compression level option
 COMPRESSION_LEVEL=${3:-6}
 echo "Using compression level: $COMPRESSION_LEVEL"
+# Add email notification on completion
+send_notification() {
+    echo "Backup completed at $(date)" | mail -s "Backup Status" user@example.com 2>/dev/null || true
+}
+send_notification

@@ -3,6 +3,8 @@
 Configuration file for the application
 """
 
+#egor was here
+
 # Application settings
 DEBUG = True
 VERSION = "1.0"
